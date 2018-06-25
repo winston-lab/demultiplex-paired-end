@@ -1,13 +1,14 @@
 .snakemake/
 fastq/*
 logs/*
+logs/cluster/*
 *.svg
 snakemake.err
 snakemake.log
-
-
 
 config.yaml
 
 !fastq/.gitkeep
 !logs/.gitkeep
+!logs/cluster/
+!logs/cluster/.gitkeep

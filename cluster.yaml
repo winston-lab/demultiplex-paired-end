@@ -5,11 +5,15 @@ __default__ :
     n : 1
     mem : 2000
     name : "{rule}.{wildcards}"
-    log : "logs/{rule}.{wildcards}.log"
-    err : "logs/{rule}.{wildcards}.err"
+    log : "logs/cluster/{rule}.{wildcards}.log"
+    err : "logs/cluster/{rule}.{wildcards}.err"
 
 demultiplex:
-    queue: medium
-    time : 1410
+    time : 180
     mem : 6000
+
+remove_barcodes:
+    time : 60
+    n: 4
+    mem : 2000
 
