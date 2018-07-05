@@ -1,0 +1,17 @@
+
+#provide paths to read1 and read2 fastq files (relative paths are okay)
+r1 : fastq/Undetermined_S0.R1.fastq.gz
+r2 : fastq/Undetermined_S0.R2.fastq.gz
+
+samples:
+    wt-1 : GCAGCCTC # [sample name: barcode]
+    wt-2 : TCGCGTAC
+    wt-3 : TATACCGT
+    non-depleted-1 : ATATAGGA
+    non-depleted-2 : AACCGTGT
+    non-depleted-3 : CTCTGTCT
+    depleted-1 : CCATACAC
+    depleted-2 : GTCTACAT
+    depleted-3 : GAGTTAAC
+
+threads : 4 # [INT] maximum number of threads to use when running locally
