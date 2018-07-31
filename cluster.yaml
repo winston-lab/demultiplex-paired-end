@@ -17,3 +17,8 @@ remove_barcodes:
     n: 4
     mem : 2000
 
+check_barcodes_only:
+    time : 60
+    n: 4
+    mem : 2000
+
