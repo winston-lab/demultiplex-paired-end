@@ -74,7 +74,7 @@ rule check_barcodes_only:
         overlap = lambda wc: len(SAMPLES[wc.sample])+1
     threads: config["threads"]
     log:
-        "logs/remove_barcodes/remove_barcodes_{sample}.log"
+        "logs/check_barcodes_only/check_barcodes_only_{sample}.log"
     shell: """
         (cutadapt --cores={threads} -g {params.barcode} -G {params.barcode} --error-rate={params.error_rate} --no-indels --overlap={params.overlap} --no-trim --discard-untrimmed --output={output.r1} --paired-output={output.r2} {input.r1} {input.r2}) &> {log}
         """
