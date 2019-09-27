@@ -5,6 +5,7 @@ logs/cluster/*
 *.svg
 snakemake.err
 snakemake.log
+*.*.swp
 
 config.yaml
 
