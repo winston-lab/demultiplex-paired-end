@@ -8,6 +8,7 @@ localrules: make_barcode_file
 
 rule all:
     input:
+        "config.yaml",
         expand("fastq/{sample}.{read}.fastq.gz", sample=SAMPLES, read = ["r1", "r2"]),
         expand("fastq/nontrimmed/{sample}-nontrimmed.{read}.fastq.gz", sample=SAMPLES, read = ["r1", "r2"])
 
